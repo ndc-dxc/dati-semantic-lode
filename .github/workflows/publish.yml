@@ -49,8 +49,6 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v2
-      - name: Dependency Check
-        run: ./gradlew dependencyCheckAnalyze
   security:
     runs-on: ubuntu-latest
     steps:

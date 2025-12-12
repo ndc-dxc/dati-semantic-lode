@@ -65,7 +65,6 @@ spotbugsTest {
 gradle.taskGraph.whenReady { graph ->
 	if (graph.hasTask(build)) {
 		spotbugsMain.enabled = false
-		dependencyCheckAnalyze.enabled = false
 		spotbugsTest.enabled = false
 	}
 }
